@@ -8,7 +8,7 @@ module.exports = {
 
       stylus(str, opts).render((err, css) => {
         if (err) throw err
-        ret = css.replace(/\s/g, '')
+        ret = css.replace(/\s/g, ' ')
       })
 
       return '\n<style>' + ret + '</style>'

@@ -1,7 +1,7 @@
 {
   "name": "emails",
   "version": "1.0.0",
-  "description": "",
+  "description": "Custom Email Templates",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",

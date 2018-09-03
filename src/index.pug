@@ -5,13 +5,44 @@ html(lang="en")
     title ###
     meta(name="viewport" content="width=device-width, initial-scale=1")
     :stylus
+      //- RESET START
       body
-        color red
+        margin 0
+        padding 0
+      table
+      td
+        border-collapse collapse
+      img
+        border 0 none
+        height auto
+        line-height 100%
+        outline none
+        text-decoration none
+      a
+        img
+          border 0 none
+      //- RESET END
+      body
+        color #000
+        font-family Arial, sans-serif
+        line-height 1.4
+      //- table
+      //-   outline 1px dashed
+      img
+        vertical-align middle
 
   body(leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" offset="0")
 
-    table(width="512" border="0" cellpadding="0" cellspacing="0" align="center")
-      tr
-        td(height="72")
-      tr
-        td Title
+    include components/header
+
+    include components/space32
+
+    include components/image
+
+    include components/space32
+
+    include components/content
+
+    include components/space32
+
+    include components/footer
